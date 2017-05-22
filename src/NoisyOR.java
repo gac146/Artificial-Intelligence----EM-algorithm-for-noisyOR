@@ -62,6 +62,9 @@ public class NoisyOR {
 		}	
 	}
 	
+	/**
+	 * Computing errors for all iterations
+	 */
 	private static void computeEM() {
 		double denom = 0;		
 		for(int row=0; row<T; row++) {
@@ -77,7 +80,6 @@ public class NoisyOR {
 	 */
 	private static void computeLogLikelihood() {		
 		double likelihood = 0;
-		int yVal = 0;
 		
 		//getting the likelihood from every Xi for all T
 		for(int row=0; row<T; row++) {
