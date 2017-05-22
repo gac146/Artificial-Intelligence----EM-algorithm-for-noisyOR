@@ -6,7 +6,7 @@
 
 public class Xnode {
 	
-	private int xValue;
+	private double xValue;
 	private double currProb;
 	private double oldProb;
 	
@@ -25,7 +25,7 @@ public class Xnode {
 	/**
 	 * @return value of current node
 	 */
-	public int getValue() {
+	public double getValue() {
 		return this.xValue;
 	}
 	
