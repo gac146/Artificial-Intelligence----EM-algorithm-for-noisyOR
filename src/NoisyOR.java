@@ -8,6 +8,7 @@ import java.util.Scanner;
  * Date: 05/21/2017
  */
 
+
 public class NoisyOR {
 	
 	private static final double T = 267;
@@ -32,7 +33,7 @@ public class NoisyOR {
 		}
 		
 		//Calculating Pi for all Xi
-		for(int counter=0; counter < 512; counter++) {
+		for(int counter=0; counter < 513; counter++) {
 			//temp array to hold new Pis
 			double[] tmpPi = new double[(int)n];
 			
@@ -60,6 +61,13 @@ public class NoisyOR {
 			pi = tmpPi;		
 			em = 0;
 		}	
+		
+		System.out.println("--------------------------------------------------------------");
+		
+		//Printing out final estimated values for Pi
+		for(int i=0; i<n; i++) {
+			System.out.println("P" + (i+1) + " = " + new DecimalFormat("#0.00000000000").format(pi[i]));
+		}
 	}
 	
 	/**
